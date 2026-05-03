@@ -5,6 +5,7 @@ import JournalEditor from "./JournalEditor";
 import EntriesList from "./EntriesList";
 import CoachCard from "./CoachCard";
 import RunCoachButton from "./RunCoachButton";
+import UserMenu from "./UserMenu";
 
 export default async function JournalPage() {
   const supabase = await createClient();
@@ -55,7 +56,7 @@ export default async function JournalPage() {
           <Link href="/this-week" className="text-blue-600 hover:underline">
             This Week →
           </Link>
-          <span className="text-gray-600">{user.email}</span>
+          <UserMenu email={user.email!} />
         </div>
       </header>
 
