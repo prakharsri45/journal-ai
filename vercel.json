@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/run-coach",
+      "schedule": "0 13 * * *"
+    }
+  ]
+}
